@@ -1,0 +1,229 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ECOWAVE HVAC - Contact</title>
+    <link rel="icon" href="{% static 'images/logos/favicon.svg' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/selectpicker/bootstrap-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontello.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}?v=4">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}?v=4">
+    <link rel="stylesheet" href="{% static 'assets/js/toastr/toastr.min.css' %}">
+</head>
+<body>
+
+<header class="header_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="header_social">
+                    <ul class="hd_social_icons">
+                        <li><a target="_blank"
+                               href="https://www.facebook.com/profile.php?id=100077841169655&sk=about"><i
+                                class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/ecowavehvac/"><i
+                                class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-8 col-xs-12">
+                <div class="header_contact text-right">
+                    <ul class="hd_contact">
+                        <li><i class="icon-placeholder"></i> Address<a href=""> 770 East Street Road, WARMINSTER
+                            PA 189741</a></li>
+                        <li><i class="icon-contact"></i> Email <a href="mailto: ecowavehvac@gmail.com ">ecowavehvac@gmail.com </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main_menu_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-12">
+                <button type="button" class="navbar-toggles">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="logo">
+                    <img src="{% static 'images/logos/logo.svg' %}" alt="Logo" style="width: 70px">
+                </a>
+            </div>
+            <div class="col-md-10 col-sm-9 collapse_responsive">
+                <div class="collapse navbar-collapse remove_padding" id="myNavbar">
+                    <ul class="nav navbar-nav text-center">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="{% url 'index:about' %}">About</a></li>
+                        <li><a href="{% url 'index:service' %}">Services</a></li>
+                        <li><a href="{% url 'index:contact' %}">Contact</a></li>
+                        <li class="header_right_btn">
+                            <a class="btn-yellow" target="_blank"
+                               href="https://docs.google.com/forms/d/1cbMFQnntYQmSGQlmrE6j4OXDcdCIIwPWauSXBxssVRA/viewform?edit_requested=true">Book
+                                an appointment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="breadcrumb_section text-center section_padding">
+    <ul class="breadcrumb">
+        <li><a href="/">Home</a></li>
+    </ul>
+    <h1>Contact us</h1>
+</section>
+
+<section class="contact_form_area contact_us section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-right contact_details">
+                    <div class="hero-title-with-shape">
+                        <h4>Contact with us</h4>
+                        <h1>We offer 24/7 emergency service to all of our customers</h1>
+                    </div>
+                    <p>There are many variations of passages of new lorem ipsum available, but the majority have
+                        suffered.</p>
+                    <div class="contact_location_box">
+                        <div class="contact_location_map">
+                            <span class="icon-location"></span>
+                            <p>770 East Street Road,<br> WARMINSTER PA 189741</p>
+                        </div>
+                        <div class="contact_location_map">
+                            <span class="icon-contact_call"></span>
+                            <p>ecowavehvac@gmail.com <br>(267) 338-5140</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-right contact-right-style-2 responsive_mt">
+                    <form id="feedbackRequestCreateForm" method="post">
+                        <input class="half_width input_m_right" type="text" name="fname" id="fname" placeholder="Your name">
+                        <input class="half_width" type="EMAIL" name="email" id="email" placeholder="Email address">
+                        <input type="tel" name="tell" id="tell" placeholder="Phone number">
+                        <textarea name="content" id="content" cols="20" rows="5" placeholder="Write message"></textarea>
+                        <button class="btn-yellow" value="SUBMIT NOW">SUBMIT NOW</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="map_section">
+    <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.130695611252!2d-75.06259608461114!3d40.18390477939284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6add59d529647%3A0xeb49d8b1cee13766!2zNzcwIEUgU3RyZWV0IFJkLCBXYXJtaW5zdGVyLCBQQSAxODk3NCwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1645112336986!5m2!1sru!2s"
+                class="map-map" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+
+<footer class="footer_area">
+    <div class="footer_contact text-center">
+        <div class="container">
+            <div class="col-md-4 col-sm-4">
+                <div class="footer_contact_width text-left">
+                    <p>
+                        <i class="icon-placeholder"></i>
+                        <span> 770 East Street Road, WARMINSTER PA 189741</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="footer_contact_width">
+                    <p>
+                        <i class="icon-contact"></i>
+                        <span><a href="mailto: ecowavehvac@gmail.com ">ecowavehvac@gmail.com </a></span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="footer_contact_width">
+                    <p>
+                        <i class="icon-phone-call"></i>
+                        <span><a href="tel: 267 338-5140"> (267) 338-5140</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_content">
+        <div class="container">
+            <div class="footer-down col-md-4 col-sm-4">
+                <p>&copy; All rights reserved 2022</p>
+            </div>
+            <div class="footer-down col-md-4 col-sm-4 text-center">
+                <p>PA LIC: 171084</p>
+            </div>
+            <div class="footer-down col-md-4 col-sm-4 text-center">
+                <a href="https://altek.icu/" class="powered" target="_blank">
+                    Powered by:
+                    <img class="altek" src="{% static 'images/logos/altek.svg' %}" alt="altek"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a class="btn_button" href="tel: 267 338-5140"><i class="icon-phone-call"></i></a>
+
+
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'assets/js/waypoint.js' %}"></script>
+<script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+<script src="{% static 'assets/js/custom.js' %}"></script>
+<script src="{% static 'assets/js/toastr/toastr.min.js' %}"></script>
+<script>
+    $('#feedbackRequestCreateForm').submit(function (event) {
+        event.preventDefault();
+        requestData = new FormData();
+        requestData.append("full_name", $("#fname").val());
+        requestData.append("phone", $("#tell").val());
+        requestData.append("email", $("#email").val());
+        requestData.append("message", $("#content").val());
+
+        let create_url = "{% url 'index:feedback_create' %}";
+        $.ajax({
+            headers: {"X-CSRFToken": "{{csrf_token}}"},
+            url: create_url,
+            processData: false,
+            contentType: false,
+            method: 'POST',
+            data: requestData,
+            success: function (data) {
+                toastr.success(
+                    'Your request has been sent\n' +
+                    'SUCCESSFULLY!',
+                    'Success',
+                    {
+                        positionClass: "toast-top-center",
+                        timeOut: 2000,
+                        fadeOut: 2000,
+                    });
+            },
+            error: function (data) {
+                console.log('Error: ' + data.responseText);
+            }
+
+        });
+
+
+
+    });
+</script>
+</body>
+</html>

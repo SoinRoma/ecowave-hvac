@@ -1,0 +1,400 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ECOWAVE HVAC</title>
+    <link rel="icon" href="{% static 'images/logos/favicon.svg' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/selectpicker/bootstrap-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontello.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}?v=4">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}?v=4">
+    <link rel="stylesheet" href="{% static 'assets/js/toastr/toastr.min.css' %}">
+</head>
+<body>
+
+
+<header class="header_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="header_social">
+                    <ul class="hd_social_icons">
+                        <li><a target="_blank"
+                               href="https://www.facebook.com/profile.php?id=100077841169655&sk=about"><i
+                                class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/ecowavehvac/"><i
+                                class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-8 col-xs-12">
+                <div class="header_contact text-right">
+                    <ul class="hd_contact">
+                        <li><i class="icon-placeholder"></i> Address<a href=""> 770 East Street Road, WARMINSTER
+                            PA 189741</a></li>
+                        <li><i class="icon-contact"></i> Email <a href="mailto: ecowavehvac@gmail.com ">ecowavehvac@gmail.com </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main_menu_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-12">
+                <button type="button" class="navbar-toggles">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="logo">
+                    <img src="{% static 'images/logos/logo.svg' %}" alt="Logo" style="width: 70px">
+                </a>
+            </div>
+            <div class="col-md-10 col-sm-9 collapse_responsive">
+                <div class="collapse navbar-collapse remove_padding" id="myNavbar">
+                    <ul class="nav navbar-nav text-center">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="{% url 'index:about' %}">About</a></li>
+                        <li><a href="{% url 'index:service' %}">Services</a></li>
+                        <li><a href="{% url 'index:contact' %}">Contact</a></li>
+                        <li class="header_right_btn">
+                            <a class="btn-yellow" target="_blank"
+                               href="https://docs.google.com/forms/d/1cbMFQnntYQmSGQlmrE6j4OXDcdCIIwPWauSXBxssVRA/viewform?edit_requested=true">Book
+                                an appointment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="header_slider_area owl-carousel owl-theme">
+    <div class="header_slider_bg slider_bg1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>01 Reliable Air Conditioning</p>
+                    <h1 class="slider-text first_text">Installation Services & Repair</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header_slider_bg slider_bg2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>02 Choos the Best Company</p>
+                    <h1 class="slider-text">Heating and Air Conditioning Specialist</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header_slider_bg slider_bg3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>03 Quality that is Guaranteed</p>
+                    <h1 class="slider-text">Expert Repair Ac and Heating Services</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about_area section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="about_image about-image__updated"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="about_details">
+                    <div class="hero-title-with-shape">
+                        <h4>Welcome to ECOWAVE HVAC</h4>
+                        <h1>Our mission is to provide fast and best services for you and your business!</h1>
+                        <p>Get it done right the first time!</p>
+                    </div>
+                    <p>We proudly provide our HVAC service to local Commercial and Residential customers. We perform
+                        repairs, installation, and maintenance in our industry.</p>
+                    <a href="{% url 'index:blog_detail' %}" class="btn-yellow">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service_area section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hero-section-title text-center">
+                    <h1>Our services</h1>
+                </div>
+            </div>
+            <div class="clients_logo_area text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="clients_logo owl-carousel">
+                            <div class="item">
+                                <div class="service_benefits_box">
+                                    <i class="icon-fire"></i>
+                                    <h3>HEATING</h3>
+                                    <p>Gas, electric, hydronic or Any other type of heating service we cover it all.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="service_benefits_box">
+                                    <i class="icon-big_clock"></i>
+                                    <h3>VENTILATION</h3>
+                                    <p>Includes all types of fans , we repair and install them.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="service_benefits_box">
+                                    <i class="icon-ac"></i>
+                                    <h3>AIR CONDITIONING</h3>
+                                    <p>We do all air conditioning services.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="service_benefits_box">
+                                    <i class="icon-snow"></i>
+                                    <h3>REFRIGERATION</h3>
+                                    <p>We provide services on Lightly commercial and Residential refrigerator units.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="service_benefits_box">
+                                    <i class="icon-mechanic"></i>
+                                    <h3>PREVENTION</h3>
+                                    <p>We perform quarterly Maintenance including full diagnosing, filter replacing,
+                                        inspecting, and cleaning.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="service_benefits_box">
+                                    <i class="icon-handshake"></i>
+                                    <h3>WATER HEATER & BOILER</h3>
+                                    <p>We do the installation, repairing, and cleaning.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="feature_service_area text-center">
+    <div class="feature_service_box_width">
+        <i class="icon-wallet"></i>
+        <p>No Upfront Payments</p>
+    </div>
+    <div class="feature_service_box_width">
+        <i class="icon-diploma"></i>
+        <p>Satisfaction Guarantee</p>
+    </div>
+    <div class="feature_service_box_width">
+        <i class="icon-big_clock"></i>
+        <p>Emergency Service</p>
+    </div>
+    <div class="feature_service_box_width">
+        <i class="icon-handshake"></i>
+        <p>Fixed Right Promise</p>
+    </div>
+    <div class="feature_service_box_width">
+        <i class="icon-mechanic"></i>
+        <p>Great Experience</p>
+    </div>
+</div>
+
+<section class="counterup_area text-center section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hero-section-title text-center">
+                    <h1>Numbers Speakers.</h1>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="counter_box">
+                    <span class="counter">457</span>
+                    <p>Air Conditioning Repairs</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="counter_box">
+                    <span class="counter">464</span>
+                    <p>Air Conditioning Install</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="counter_box">
+                    <span class="counter">830</span>
+                    <p>Satisfied with our Services</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class=" text-center faq-section">
+    <h1 class="faq-title">F.A.Q</h1>
+    <div class="faq">
+        <h2>How often should I service my HVAC system? </h2>
+        <p>Changing filters at least every three months, and diagnosing twice a year before each season </p>
+    </div>
+    <div class="faq">
+        <h2>Why my thermostat is off?</h2>
+        <p>it may be needed battery, circuit breaker tripped after an electrical surge</p>
+    </div>
+    <div class="faq">
+        <h2>Why temperature is different in other rooms?</h2>
+        <p>Could be a problem with duct sizing, blocked vents, or dirty filter</p>
+    </div>
+    <div class="faq">
+        <h2>Why sometimes it is difficult to breathe when heat is on?</h2>
+        <p>Make sure your humidity level is between 35% to 50% if it does not need to be checked humidifier</p>
+    </div>
+    <div class="faq">
+        <h2>How to make the same temperature in all rooms?</h2>
+        <p> Try to circulate air, set circulation time on your thermostat</p>
+    </div>
+
+</div>
+
+<section class="contact_form_area">
+    <div class="contact_form_width">
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.130695611252!2d-75.06259608461114!3d40.18390477939284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6add59d529647%3A0xeb49d8b1cee13766!2zNzcwIEUgU3RyZWV0IFJkLCBXYXJtaW5zdGVyLCBQQSAxODk3NCwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1645112336986!5m2!1sru!2s"
+                    class="map-map" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <div class="contact_form_width contact-right">
+        <div class="hero-title-with-shape">
+            <h4>Get a free quote</h4>
+            <h1>To request a service call, please fill out the form below</h1>
+        </div>
+        <form id="feedbackRequestCreateForm" method="post">
+            <input class="half_width input_m_right" type="text" name="fname" id="fname" placeholder="Your name">
+            <input class="half_width" type="EMAIL" name="email" id="email" placeholder="Email address">
+            <input type="tel" name="tell" id="tell" placeholder="Phone number">
+            <select name="service" id="service" class="selectpicker" style="outline: none" title="Select">
+                <option value="1">HVAC installation</option>
+                <option value="2">Repairing and maintenance</option>
+                <option value="3">Other Service</option>
+            </select>
+            <button class="btn-yellow" value="SUBMIT NOW" type="submit">SUBMIT NOW</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer_area">
+    <div class="footer_contact text-center">
+        <div class="container">
+            <div class="col-md-4 col-sm-4">
+                <div class="footer_contact_width text-left">
+                    <p>
+                        <i class="icon-placeholder"></i>
+                        <span> 770 East Street Road, WARMINSTER PA 189741</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="footer_contact_width">
+                    <p>
+                        <i class="icon-contact"></i>
+                        <span><a href="mailto: ecowavehvac@gmail.com ">ecowavehvac@gmail.com </a></span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="footer_contact_width">
+                    <p>
+                        <i class="icon-phone-call"></i>
+                        <span><a href="tel: 267 338-5140"> (267) 338-5140</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_content">
+        <div class="container">
+            <div class="footer-down col-md-4 col-sm-4">
+                <p>&copy; All rights reserved 2022</p>
+            </div>
+            <div class="footer-down col-md-4 col-sm-4 text-center">
+                <p>PA LIC: 171084</p>
+            </div>
+            <div class="footer-down col-md-4 col-sm-4 text-center">
+                <a href="https://altek.icu/" class="powered" target="_blank">
+                    Powered by:
+                    <img class="altek" src="{% static 'images/logos/altek.svg' %}" alt="altek"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a class="btn_button" href="tel: 267 338-5140"><i class="icon-phone-call"></i></a>
+
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/selectpicker/bootstrap-select.js' %}"></script>
+<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'assets/js/waypoint.js' %}"></script>
+<script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+<script src="{% static 'assets/js/custom.js' %}"></script>
+<script src="{% static 'assets/js/toastr/toastr.min.js' %}"></script>
+
+<script>
+    $('#feedbackRequestCreateForm').submit(function (event) {
+        event.preventDefault();
+        requestData = new FormData();
+        requestData.append("full_name", $("#fname").val());
+        requestData.append("phone", $("#tell").val());
+        requestData.append("email", $("#email").val());
+        requestData.append("service", $("#service").val());
+
+        let create_url = "{% url 'index:feedback_create' %}";
+        $.ajax({
+            headers: {"X-CSRFToken": "{{csrf_token}}"},
+            url: create_url,
+            processData: false,
+            contentType: false,
+            method: 'POST',
+            data: requestData,
+            success: function (data) {
+                toastr.success(
+                    'Your request has been sent\n' +
+                    'SUCCESSFULLY!',
+                    'Success',
+                    {
+                        positionClass: "toast-top-center",
+                        timeOut: 2000,
+                        fadeOut: 2000,
+                    })
+            },
+            error: function (data) {
+                console.log('Error: ' + data.responseText);
+            }
+
+        });
+
+
+    });
+</script>
+</body>
+</html>

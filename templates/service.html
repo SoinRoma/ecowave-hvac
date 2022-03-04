@@ -1,0 +1,257 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ECOWAVE HVAC - Services</title>
+    <link rel="icon" href="{% static 'images/logos/favicon.svg' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontello.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}?v=4">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}?v=4">
+</head>
+<body>
+
+<header class="header_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="header_social">
+                    <ul class="hd_social_icons">
+                        <li><a target="_blank"
+                               href="https://www.facebook.com/profile.php?id=100077841169655&sk=about"><i
+                                class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/ecowavehvac/"><i
+                                class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-8 col-xs-12">
+                <div class="header_contact text-right">
+                    <ul class="hd_contact">
+                        <li><i class="icon-placeholder"></i> Address<a href=""> 770 East Street Road, WARMINSTER
+                            PA 189741</a></li>
+                        <li><i class="icon-contact"></i> Email <a href="mailto: ecowavehvac@gmail.com ">ecowavehvac@gmail.com </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main_menu_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-12">
+                <button type="button" class="navbar-toggles">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="logo">
+                    <img src="{% static 'images/logos/logo.svg' %}" alt="Logo" style="width: 70px">
+                </a>
+            </div>
+            <div class="col-md-10 col-sm-9 collapse_responsive">
+                <div class="collapse navbar-collapse remove_padding" id="myNavbar">
+                    <ul class="nav navbar-nav text-center">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="{% url 'index:about' %}">About</a></li>
+                        <li><a href="{% url 'index:service' %}">Services</a></li>
+                        <li><a href="{% url 'index:contact' %}">Contact</a></li>
+                        <li class="header_right_btn">
+                            <a class="btn-yellow" target="_blank"
+                               href="https://docs.google.com/forms/d/1cbMFQnntYQmSGQlmrE6j4OXDcdCIIwPWauSXBxssVRA/viewform?edit_requested=true">Book
+                                an appointment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="breadcrumb_section text-center section_padding">
+    <ul class="breadcrumb">
+        <li><a href="">Home</a></li>
+    </ul>
+    <h1>Our services</h1>
+</section>
+
+<div class="service_style_2_area text-center section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="service_img_info_box">
+                    <img src="{% static 'assets/images/shape/service-color-shape.png' %}" class="service_info_color_shape" alt="shape">
+                </div>
+                <p class="col-md-10 col-md-offset-1">ECOWAVE HVAC is a heating and cooling service company with a history of
+                    excellence, customer service, and quality craftsmanship. We specialize in HVAC service, replacement,
+                    and repair for both residential and commercial customers.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="service_area section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hero-section-title text-center">
+                    <h1>Our services</h1>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="service_box">
+                    <div class="service_img">
+                        <img src="{% static 'images/service/service-1.jpg' %}" alt="service image">
+                        <div class="icon-box">
+                            <i class="icon-snow"></i>
+                        </div>
+                    </div>
+                    <div class="service_details">
+                        <a href=""><h2>Cooling Services</h2></a>
+                        <p>
+                            There are many variations passages of lorem ipsum available but the majority have suffered
+                            alteration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="service_box">
+                    <div class="service_img">
+                        <img src="{% static 'images/service/service-2.jpg' %}" alt="service image">
+                        <div class="icon-box">
+                            <i class="icon-fire"></i>
+                        </div>
+                    </div>
+                    <div class="service_details">
+                        <a href="service-details.html"><h2>Heating Services</h2></a>
+                        <p>
+                            There are many variations passages of lorem ipsum available but the majority have suffered
+                            alteration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="service_box">
+                    <div class="service_img">
+                        <img src="{% static 'images/service/service-3.jpg' %}" alt="service image">
+                        <div class="icon-box">
+                            <i class="icon-ac"></i>
+                        </div>
+                    </div>
+                    <div class="service_details">
+                        <a href="service-details.html"><h2>Other Services</h2></a>
+                        <p>
+                            There are many variations passages of lorem ipsum available but the majority have suffered
+                            alteration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service_benefits_area text-center section_border section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hero-section-title">
+                    <h1>Our benefits</h1>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service_benefits_box">
+                    <i class="icon-big_clock"></i>
+                    <h3>Emergency Service</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service_benefits_box">
+                    <i class="icon-wallet"></i>
+                    <h3>No Upfront Payment</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service_benefits_box">
+                    <i class="icon-diploma"></i>
+                    <h3>Satisfaction Guarantee</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service_benefits_box">
+                    <i class="icon-mechanic"></i>
+                    <h3>Great Experience</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer_area">
+    <div class="footer_contact text-center">
+        <div class="container">
+            <div class="col-md-4 col-sm-4">
+                <div class="footer_contact_width text-left">
+                    <p>
+                        <i class="icon-placeholder"></i>
+                        <span> 770 East Street Road, WARMINSTER PA 189741</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="footer_contact_width">
+                    <p>
+                        <i class="icon-contact"></i>
+                        <span><a href="mailto: ecowavehvac@gmail.com ">ecowavehvac@gmail.com </a></span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="footer_contact_width">
+                    <p>
+                        <i class="icon-phone-call"></i>
+                        <span><a href="tel: 267 338-5140"> (267) 338-5140</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_content">
+        <div class="container">
+            <div class="footer-down col-md-4 col-sm-4">
+                <p>&copy; All rights reserved 2022</p>
+            </div>
+            <div class="footer-down col-md-4 col-sm-4 text-center">
+                <p>PA LIC: 171084</p>
+            </div>
+            <div class="footer-down col-md-4 col-sm-4 text-center">
+                <a href="https://altek.icu/" class="powered" target="_blank">
+                    Powered by:
+                    <img class="altek" src="{% static 'images/logos/altek.svg' %}" alt="altek"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a class="btn_button" href="tel: 267 338-5140"><i class="icon-phone-call"></i></a>
+
+
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'assets/js/waypoint.js' %}"></script>
+<script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+<script src="{% static 'assets/js/custom.js' %}"></script>
+</body>
+</html>

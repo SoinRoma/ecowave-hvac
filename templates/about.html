@@ -1,0 +1,188 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ECOWAVE HVAC - About</title>
+    <link rel="icon" href="{% static 'images/logos/favicon.svg' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontello.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}?v=4">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}?v=4">
+</head>
+<body>
+
+<header class="header_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="header_social">
+                    <ul class="hd_social_icons">
+                        <li><a target="_blank"
+                               href="https://www.facebook.com/profile.php?id=100077841169655&sk=about"><i
+                                class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/ecowavehvac/"><i
+                                class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-8 col-xs-12">
+                <div class="header_contact text-right">
+                    <ul class="hd_contact">
+                        <li><i class="icon-placeholder"></i> Address<a href=""> 770 East Street Road, WARMINSTER
+                            PA 189741</a></li>
+                        <li><i class="icon-contact"></i> Email <a href="mailto: ecowavehvac@gmail.com ">ecowavehvac@gmail.com </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main_menu_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-12">
+                <button type="button" class="navbar-toggles">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="logo">
+                    <img src="{% static 'images/logos/logo.svg' %}" alt="Logo" style="width: 70px">
+                </a>
+            </div>
+            <div class="col-md-10 col-sm-9 collapse_responsive">
+                <div class="collapse navbar-collapse remove_padding" id="myNavbar">
+                    <ul class="nav navbar-nav text-center">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="{% url 'index:about' %}">About</a></li>
+                        <li><a href="{% url 'index:service' %}">Services</a></li>
+                        <li><a href="{% url 'index:contact' %}">Contact</a></li>
+                        <li class="header_right_btn">
+                            <a class="btn-yellow" target="_blank"
+                               href="https://docs.google.com/forms/d/1cbMFQnntYQmSGQlmrE6j4OXDcdCIIwPWauSXBxssVRA/viewform?edit_requested=true">Book
+                                an appointment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="breadcrumb_section text-center section_padding">
+    <ul class="breadcrumb">
+        <li><a href="/">Home</a></li>
+    </ul>
+    <h1>About us</h1>
+</section>
+
+<section class="about_style_3_area section_padding">
+    <div class="container">
+        <div class="col-md-12 col-sm-12">
+            <h1 class="text-center">Simple hack to improve A/C efficiency</h1>
+            <div class="blog_share_details blog_share_details__details">
+                <p>We specialized in commercial and residential HVAC equipment service and maintenance. We offer
+                    annual preventive maintenance plans and emergency responses. We always try to help each
+                    other(it is how we grow), when our work shows positive results we are proud of it, Teamwork
+                    always makes Dreamwork!</p>
+                <p>
+                    Please use
+                    <a href="https://docs.google.com/forms/d/1cbMFQnntYQmSGQlmrE6j4OXDcdCIIwPWauSXBxssVRA/viewform?edit_requested=true">
+                        this
+                    </a>
+                    form to send us a service request or contact our office at (267) 338-5140
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="text-center about-title">Why choose us</h1>
+        <div class="row about-row">
+            <div class="col-md-6">
+                <div class="about_service_left"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="about_service_right">
+                    <div class="hero-title-with-shape">
+                        <h1>We are trusted source of ac and heating maintenance repairs company</h1>
+                    </div>
+                    <ul>
+                        <li><i class="fa fa-check-circle"></i>Unmatched performance, satisfaction service guarantees</li>
+                        <li><i class="fa fa-check-circle"></i> Home protection through our shoe covers and mats</li>
+                        <li><i class="fa fa-check-circle"></i> Upfront, flat rate pricing—no overtime charges</li>
+                        <li><i class="fa fa-check-circle"></i> 24 / 7 availability for all emergency services</li>
+                        <li><i class="fa fa-check-circle"></i> Fixed right promise—done right or it’s free</li>
+                        <li><i class="fa fa-check-circle"></i> Clear communication and updates on service arrival</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer_area">
+    <div class="footer_contact text-center">
+        <div class="container">
+            <div class="col-md-4 col-sm-4">
+                <div class="footer_contact_width text-left">
+                    <p>
+                        <i class="icon-placeholder"></i>
+                        <span> 770 East Street Road, WARMINSTER PA 189741</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="footer_contact_width">
+                    <p>
+                        <i class="icon-contact"></i>
+                        <span><a href="mailto: ecowavehvac@gmail.com ">ecowavehvac@gmail.com </a></span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="footer_contact_width">
+                    <p>
+                        <i class="icon-phone-call"></i>
+                        <span><a href="tel: 267 338-5140"> (267) 338-5140</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_content">
+        <div class="container">
+            <div class="footer-down col-md-4 col-sm-4">
+                <p>&copy; All rights reserved 2022</p>
+            </div>
+            <div class="footer-down col-md-4 col-sm-4 text-center">
+                <p>PA LIC: 171084</p>
+            </div>
+            <div class="footer-down col-md-4 col-sm-4 text-center">
+                <a href="https://altek.icu/" class="powered" target="_blank">
+                    Powered by:
+                    <img class="altek" src="{% static 'images/logos/altek.svg' %}" alt="altek"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a class="btn_button" href="tel: 267 338-5140"><i class="icon-phone-call"></i></a>
+
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'assets/js/waypoint.js' %}"></script>
+
+<script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+<script src="{% static 'assets/js/custom.js' %}"></script>
+</body>
+</html>
