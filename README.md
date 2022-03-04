@@ -13,9 +13,13 @@
 ![Django](https://img.shields.io/badge/-Django-black?style=flat-square&logo=django)
 
 ### Используемые плагины/библиотеки
-![InputMask](https://img.shields.io/badge/-InputMask-black?style=flat-square&logo=inputmask&logoColor=inputmask)
+![BOOTSTRAP](https://img.shields.io/badge/-BOOTSTRAP-black?style=flat-square&logo=bootstrap&logoColor=bootstrap)
+![FontAwesome](https://img.shields.io/badge/-FontAwesome-black?style=flat-square&logo=fontawesome&logoColor=fontawesome)
+![AnimateJs](https://img.shields.io/badge/-AnimateJS-black?style=flat-square&logo=animatejs&logoColor=animatejs)
+
 ![JQuery](https://img.shields.io/badge/-JQuery-black?style=flat-square&logo=jquery&logoColor=jquery)
 ![Toastr](https://img.shields.io/badge/-Toastr-black?style=flat-square&logo=toastr&logoColor=toastr)
+![OwlCarousel](https://img.shields.io/badge/-OwlCarousel-black?style=flat-square&logo=owlcarousel&logoColor=owlcarousel)
 
 ### Запуск проекта для Windows
 
