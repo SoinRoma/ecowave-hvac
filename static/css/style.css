@@ -692,7 +692,7 @@ body {
 }
 
 .slider_bg1 {
-    background-image: url(../images/main-slider/slider1.jpg);
+    background-image: url(../images/main-slider/slider1.webp);
     background-size: cover;
     height: 100%;
     padding: 338px 0 238px 0;
@@ -702,7 +702,7 @@ body {
 }
 
 .slider_bg2 {
-    background-image: url(../images/main-slider/slider2.jpg);
+    background-image: url(../images/main-slider/slider2.webp);
     background-size: cover;
     height: 100%;
     padding: 338px 0 238px 0;
@@ -712,7 +712,7 @@ body {
 }
 
 .slider_bg3 {
-    background-image: url(../images/main-slider/slider3.jpg);
+    background-image: url(../images/main-slider/slider3.webp);
     background-size: cover;
     height: 100%;
     padding: 338px 0 238px 0;
@@ -965,7 +965,7 @@ body {
     position: relative;
     height: 435px;
     width: 95%;
-    background: url(../images/home/about.jpg) center center no-repeat;
+    background: url(../images/home/about.webp) center center no-repeat;
     background-size: cover;
 }
 
@@ -1235,7 +1235,7 @@ section.about_area img.about_shape {
     margin-bottom: 130px;
     width: 100%;
     height: 400px;
-    background: url(/static/images/service/service-main.jpg) center center no-repeat;
+    background: url(/static/images/service/service-main.webp) center center no-repeat;
     background-size: cover;
 }
 
@@ -2015,7 +2015,7 @@ section.about_area img.about_shape {
 .about_service_left {
     position: relative;
     width: 95%;
-    background: url(../images/about/about-left.jpg) center no-repeat;
+    background: url(../images/about/about-left.webp) center no-repeat;
     background-size: cover;
     height: 675px;
 }
@@ -2430,27 +2430,27 @@ section.about_area img.about_shape {
 }
 
 .post1 {
-    background: url(../images/posts/post1.jpg) center center no-repeat;
+    background: url(../images/posts/post1.webp) center center no-repeat;
 }
 
 .post2 {
-    background: url(../images/posts/post2.jpg) center center no-repeat;
+    background: url(../images/posts/post2.webp) center center no-repeat;
 }
 
 .post3 {
-    background: url(../images/posts/post3.jpeg) center center no-repeat;
+    background: url(../images/posts/post3.webp) center center no-repeat;
 }
 
 .post4 {
-    background: url(../images/posts/post4.jpg) center center no-repeat;
+    background: url(../images/posts/post4.webp) center center no-repeat;
 }
 
 .post5 {
-    background: url(../images/posts/post5.jpg) center center no-repeat;
+    background: url(../images/posts/post5.webp) center center no-repeat;
 }
 
 .post6 {
-    background: url(../images/posts/post6.jpg) center center no-repeat;
+    background: url(../images/posts/post6.webp) center center no-repeat;
 }
 
 .blog_left_box .blog_share_details p {
