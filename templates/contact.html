@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ECOWAVE HVAC - Contact</title>
     <link rel="icon" href="{% static 'images/logos/favicon.svg' %}">
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/owl-carousel/owl.carousel.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/fontello.css' %}">
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}?v=4">
@@ -178,23 +178,25 @@
 <a class="btn_button" href="tel: 267 338-5140"><i class="icon-phone-call"></i></a>
 
 
-<script src="{% static 'js/jquery.min.js' %}"></script>
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
-<script src="{% static 'js/owl.carousel.min.js' %}"></script>
-<script src="{% static 'js/waypoint.js' %}"></script>
-<script src="{% static 'js/jquery.counterup.min.js' %}"></script>
-<script src="{% static 'js/custom.js' %}"></script>
+<script src="{% static 'plugins/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugins/owl-carousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'plugins/waypoint/waypoint.js' %}"></script>
+<script src="{% static 'plugins/jquery/jquery.counterup.min.js' %}"></script>
 <script src="{% static 'plugins/toastr/toastr.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+
 <script>
-    $('#feedbackRequestCreateForm').submit(function (event) {
+    $('#feedbackRequestCreateForm').submit((event) => {
         event.preventDefault();
-        requestData = new FormData();
+
+        const create_url = "{% url 'index:feedback_create' %}";
+        let requestData = new FormData();
         requestData.append("full_name", $("#fname").val());
         requestData.append("phone", $("#tell").val());
         requestData.append("email", $("#email").val());
-        requestData.append("message", $("#content").val());
+        requestData.append("service", $("#service").val());
 
-        let create_url = "{% url 'index:feedback_create' %}";
         $.ajax({
             headers: {"X-CSRFToken": "{{csrf_token}}"},
             url: create_url,
@@ -202,7 +204,7 @@
             contentType: false,
             method: 'POST',
             data: requestData,
-            success: function (data) {
+            success: () => {
                 toastr.success(
                     'Your request has been sent\n' +
                     'SUCCESSFULLY!',
@@ -211,17 +213,14 @@
                         positionClass: "toast-top-center",
                         timeOut: 2000,
                         fadeOut: 2000,
-                    });
+                    })
             },
-            error: function (data) {
-                console.log('Error: ' + data.responseText);
+            error: (data) => {
+                alert(data.responseText);
             }
-
         });
-
-
-
     });
 </script>
+
 </body>
 </html>
